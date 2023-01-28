@@ -10,7 +10,7 @@ export default function PlayListItem({ item }) {
       <div>
         标签：
         {tags.map((tag) => (
-          <TagBox key={tag} tag={tag} />
+          <TagBox key={tag}>{tag}</TagBox>
         ))}
       </div>
       <img src={item.coverImgUrl} alt={item.name} className="img-fluid my-2" />

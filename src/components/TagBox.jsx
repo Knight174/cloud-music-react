@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Children } from 'react';
 import styled from 'styled-components';
 
 const Title = styled.span`
@@ -8,8 +9,8 @@ const Title = styled.span`
   border-radius: 2px;
 `;
 
-export default function TagBox({ tag }) {
-  return <Title>{tag}</Title>;
+export default function TagBox({ children }) {
+  return <Title>{children}</Title>;
 }
 
 TagBox.propTypes = {
